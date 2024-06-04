@@ -5,8 +5,8 @@ const bcrypt = require("bcrypt");
 const Forgotpassword = require("../models/ForgotPasswordRequests");
 require("dotenv").config();
 
-console.log("user", process.env.USER);
-console.log("pass", process.env.API_KEY);
+// console.log("user", process.env.USER);
+// console.log("pass", process.env.API_KEY);
 
 const forgotPass = async (req, res) => {
   const { email } = req.body;
